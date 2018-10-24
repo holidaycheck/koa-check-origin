@@ -5,8 +5,8 @@
   "engines": {
     "node": ">=7.5.0"
   },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
   "author": "Christian Rackerseder <git@echooff.de>",
   "license": "MIT",
   "repository": {
@@ -22,9 +22,15 @@
     "origin",
     "whitelist"
   ],
+  "files": [
+    "dist/src/index.js",
+    "dist/src/index.d.ts"
+  ],
   "scripts": {
     "precommit": "pretty-quick --staged",
     "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts'",
+    "test:unit": "tape -r source-map-support/register 'dist/test/unit/**/*.js' | tap-spec",
+    "test": "yarn lint && nyc yarn test:unit",
     "build": "tsc"
   },
   "dependencies": {
@@ -32,9 +38,16 @@
     "tslib": "1.9.3"
   },
   "devDependencies": {
+    "@types/sinon": "5.0.5",
+    "@types/tape": "4.2.32",
     "husky": "1.1.2",
+    "nyc": "13.1.0",
     "prettier": "1.14.3",
     "pretty-quick": "1.8.0",
+    "sinon": "7.0.0",
+    "source-map-support": "0.5.9",
+    "tap-spec": "5.0.0",
+    "tape": "4.9.1",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",
     "typescript": "3.1.3",
