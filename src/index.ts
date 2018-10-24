@@ -1,12 +1,12 @@
 import { Context, Middleware } from 'koa';
+import { URL } from 'url';
 
-export function originWhitelist(
-  allowedOrigins: ReadonlyArray<string>,
-): Middleware {
+export function createOriginWhitelistMiddleware(baseUrl: string): Middleware {
+  const { hostname: allowedHost } = new URL(baseUrl);
   return async (ctx: Context, next: () => Promise<any>) => {
     const { origin } = ctx;
-
-    if (allowedOrigins.includes(origin)) {
+    const { hostname: originHost } = new URL(origin);
+    if (originHost === allowedHost) {
       await next();
     } else {
       ctx.throw(403, `Origin ${origin} not allowed!`);

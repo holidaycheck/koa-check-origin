@@ -1,7 +1,7 @@
 import test from 'tape';
 import sinon, { SinonStub } from 'sinon';
 import { Context } from 'koa';
-import { originWhitelist } from '../../src/index';
+import { createOriginWhitelistMiddleware } from '../../src/index';
 
 test('call next() when origin was found', async t => {
   t.plan(1);
@@ -10,8 +10,7 @@ test('call next() when origin was found', async t => {
     throw: sinon.stub().throws() as never,
   };
   const next = sinon.stub();
-  const allowedOrigins = ['http://example.com'];
-  const middleware = originWhitelist(allowedOrigins);
+  const middleware = createOriginWhitelistMiddleware('http://example.com');
   await middleware(mockContext as Context, next);
 
   t.is(next.callCount, 1);
@@ -24,8 +23,7 @@ test('throw HTTP 403 when origin was not found', async t => {
     throw: sinon.stub() as never,
   };
   const next = sinon.stub();
-  const allowedOrigins = ['http://example.com'];
-  const middleware = originWhitelist(allowedOrigins);
+  const middleware = createOriginWhitelistMiddleware('http://example.com');
   await middleware(mockContext as Context, next);
 
   const mockThrow = (mockContext.throw as unknown) as SinonStub;
