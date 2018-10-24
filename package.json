@@ -19,6 +19,7 @@
     "whitelist"
   ],
   "scripts": {
+    "precommit": "pretty-quick --staged",
     "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts'",
     "build": "tsc"
   },
@@ -26,6 +27,9 @@
     "tslib": "1.9.3"
   },
   "devDependencies": {
+    "husky": "1.1.2",
+    "prettier": "1.14.3",
+    "pretty-quick": "1.8.0",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",
     "typescript": "3.1.3",
