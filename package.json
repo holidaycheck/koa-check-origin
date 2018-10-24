@@ -1,7 +1,7 @@
 {
   "name": "koa-origin-whitelist",
   "version": "1.0.0",
-  "description": "Bundle rules, scripts and hooks to deploy them to Auth0.",
+  "description": "A Koa middleware that throws a HTTP 403 when origin is not in the given whitelist.",
   "engines": {
     "node": ">=7.5.0"
   },
