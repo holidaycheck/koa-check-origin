@@ -1,6 +1,6 @@
 {
-  "name": "koa-origin-whitelist",
-  "version": "1.0.0",
+  "name": "koa-check-origin",
+  "version": "0.1.0",
   "description": "A Koa middleware that throws a HTTP 403 when origin is not in the given whitelist.",
   "engines": {
     "node": ">=7.5.0"
@@ -11,12 +11,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/holidaycheck/koa-origin-whitelist.git"
+    "url": "git+ssh://git@github.com/holidaycheck/koa-check-origin.git"
   },
   "bugs": {
-    "url": "https://github.com/holidaycheck/koa-origin-whitelist/issues"
+    "url": "https://github.com/holidaycheck/koa-check-origin/issues"
   },
-  "homepage": "https://github.com/holidaycheck/koa-origin-whitelist#readme",
+  "homepage": "https://github.com/holidaycheck/koa-check-origin#readme",
   "keywords": [
     "koa",
     "origin",
