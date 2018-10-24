@@ -16,7 +16,7 @@ A [koa](https://koajs.com) middleware that checks if the origin matches the give
 $ npm install --save koa-check-origin
 ```
 
-or if you use [Yarn](https://yarnpkg.com)
+or if you use [Yarn](https://yarnpkg.com) 🐈
 
 ```sh
 $ yarn add koa-check-origin
@@ -25,6 +25,10 @@ $ yarn add koa-check-origin
 ## Usage 🔨
 
 ```js
+import { createCheckOriginMiddleware } from 'koa-check-origin';
+
 const app = new Koa();
-app.use(createCheckOriginMiddleware('http://example.com'));
+
+const checkOriginMiddleware = createCheckOriginMiddleware('http://example.com');
+app.use(checkOriginMiddleware);
 ```
