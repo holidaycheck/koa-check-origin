@@ -1,0 +1,21 @@
+{
+  "name": "koa-origin-whitelist",
+  "version": "1.0.0",
+  "description": "Bundle rules, scripts and hooks to deploy them to Auth0.",
+  "main": "index.js",
+  "author": "Christian Rackerseder <git@echooff.de>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/holidaycheck/koa-origin-whitelist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/holidaycheck/koa-origin-whitelist/issues"
+  },
+  "homepage": "https://github.com/holidaycheck/koa-origin-whitelist#readme",
+  "keywords": [
+    "koa",
+    "origin",
+    "whitelist"
+  ]
+}
