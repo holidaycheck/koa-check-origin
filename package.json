@@ -1,7 +1,7 @@
 {
   "name": "koa-check-origin",
   "version": "0.1.0",
-  "description": "A Koa middleware that throws a HTTP 403 when origin is not in the given whitelist.",
+  "description": "A Koa middleware that throws a HTTP 403 when the given origin does not match.",
   "engines": {
     "node": ">=7.6.0"
   },
