@@ -20,7 +20,7 @@
   "keywords": [
     "koa",
     "origin",
-    "whitelist"
+    "middleware"
   ],
   "files": [
     "dist/src/index.js",
