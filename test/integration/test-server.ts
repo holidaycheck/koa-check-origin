@@ -1,3 +1,4 @@
+import { createServer } from 'http';
 import Koa from 'koa';
 import listen from 'test-listen';
 import { createCheckOriginMiddleware } from '../../src/index';
@@ -8,7 +9,7 @@ export async function withServer(
 ) {
   const app = new Koa();
   app.use(createCheckOriginMiddleware(baseUrl));
-  const server = app.listen();
+  const server = createServer(app.callback());
   const url = await listen(server);
   try {
     await testFn(url);
