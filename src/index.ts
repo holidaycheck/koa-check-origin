@@ -1,7 +1,7 @@
 import { Context, Middleware } from 'koa';
 import { URL } from 'url';
 
-export function createOriginWhitelistMiddleware(baseUrl: string): Middleware {
+export function createCheckOriginMiddleware(baseUrl: string): Middleware {
   const { hostname: allowedHost } = new URL(baseUrl);
   return async (ctx: Context, next: () => Promise<any>) => {
     const { origin } = ctx;

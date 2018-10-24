@@ -1,13 +1,13 @@
 import Koa from 'koa';
 import listen from 'test-listen';
-import { createOriginWhitelistMiddleware } from '../../src/index';
+import { createCheckOriginMiddleware } from '../../src/index';
 
 export async function withServer(
   testFn: (url: string) => Promise<void>,
   baseUrl = 'http://localhost',
 ) {
   const app = new Koa();
-  app.use(createOriginWhitelistMiddleware(baseUrl));
+  app.use(createCheckOriginMiddleware(baseUrl));
   const server = app.listen();
   const url = await listen(server);
   try {
