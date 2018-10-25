@@ -1,7 +1,7 @@
 import { createServer } from 'http';
 import Koa from 'koa';
 import listen from 'test-listen';
-import { createCheckOriginMiddleware } from '../../src/index';
+import createCheckOriginMiddleware = require('../../src/index');
 
 export async function withServer(
   testFn: (url: string) => Promise<void>,

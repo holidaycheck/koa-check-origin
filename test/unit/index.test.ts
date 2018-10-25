@@ -1,7 +1,7 @@
 import test from 'tape';
 import sinon, { SinonStub } from 'sinon';
 import { Context } from 'koa';
-import { createCheckOriginMiddleware } from '../../src/index';
+import createCheckOriginMiddleware = require('../../src/index');
 
 test('call next() when origin was found', async t => {
   t.plan(1);

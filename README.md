@@ -25,7 +25,7 @@ $ yarn add koa-check-origin
 ## Usage 🔨
 
 ```js
-import { createCheckOriginMiddleware } from 'koa-check-origin';
+const createCheckOriginMiddleware = require('koa-check-origin');
 
 const app = new Koa();
 

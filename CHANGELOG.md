@@ -1,3 +1,7 @@
+# 2.0.0
+
+- Change named export to CommonJS export.
+
 # 1.0.1
 
 - Add JSDoc comments so that for example TypeScript users can see the documentation directly in their editor.
