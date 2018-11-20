@@ -38,7 +38,7 @@
     "build": "tsc --build"
   },
   "dependencies": {
-    "@types/koa": "2.0.46",
+    "@types/koa": "2.0.47",
     "tslib": "1.9.3"
   },
   "devDependencies": {
