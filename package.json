@@ -42,7 +42,7 @@
     "tslib": "1.9.3"
   },
   "devDependencies": {
-    "@types/got": "9.2.0",
+    "@types/got": "9.2.1",
     "@types/sinon": "5.0.7",
     "@types/tape": "4.2.32",
     "@types/test-listen": "1.1.0",
