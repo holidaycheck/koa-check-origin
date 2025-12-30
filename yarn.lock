@@ -268,10 +268,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/test-listen@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@types/test-listen/-/test-listen-1.1.0.tgz#db7e5b0e277b4a3ee7b90770dae1a41b186458af"
-  integrity sha512-y6ZfbSzYHniCeY6ZAzsQjSAdJInNVoEz4Uhsb81W+RCoNYA59yoG/+XbqPqCPj2KCU3Wa6RFWSozutkGIHIsNQ==
+"@types/test-listen@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@types/test-listen/-/test-listen-1.1.2.tgz#f6ab964a427f6649063d5817d5a86f1d6ac95cae"
+  integrity sha512-1z4+FBjfjHOu9d3dXUWE5yD/iwVe3OrHALX6Y2Qsv3CAL1+U2lvsIgbrIyHifi8HH1CUkHTYNDUFuUNXk1gusA==
   dependencies:
     "@types/node" "*"
 

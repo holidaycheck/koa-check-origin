@@ -45,7 +45,7 @@
     "@types/got": "9.2.1",
     "@types/sinon": "7.0.0",
     "@types/tape": "4.2.32",
-    "@types/test-listen": "1.1.0",
+    "@types/test-listen": "1.1.2",
     "got": "9.4.0",
     "husky": "1.2.1",
     "koa": "2.6.2",
