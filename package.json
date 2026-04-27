@@ -46,7 +46,7 @@
     "@types/sinon": "7.0.0",
     "@types/tape": "4.2.32",
     "@types/test-listen": "1.1.0",
-    "got": "9.4.0",
+    "got": "11.8.5",
     "husky": "1.2.1",
     "koa": "2.6.2",
     "nyc": "13.1.0",
