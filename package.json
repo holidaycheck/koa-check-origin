@@ -48,7 +48,7 @@
     "@types/test-listen": "1.1.0",
     "got": "9.4.0",
     "husky": "1.2.1",
-    "koa": "2.6.2",
+    "koa": "2.16.4",
     "nyc": "13.1.0",
     "prettier": "1.15.3",
     "pretty-quick": "1.8.0",
